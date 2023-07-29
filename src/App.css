@@ -16,22 +16,6 @@ ul > li {
   font-weight: bold;
 }
 
-button {
-  border: 2px solid white;
-  padding: 0.7rem 3rem;
-  border-radius: 50px;
-  cursor: pointer;
-  font-size: 1.3rem;
-  background: #cb450c;
-  transition: 0.5s;
-}
-
-button:hover {
-  background: white;
-  color: black;
-  border: 2px solid black;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -43,14 +27,6 @@ a {
   animation: static 3s steps(5, end) infinite;
   z-index: 999;
   background-size: 200px;
-}
-
-footer h3 {
-  text-align: center;
-  color: white;
-  margin: 0;
-  padding: 2% 0;
-  letter-spacing: 0.1rem;
 }
 
 @keyframes static {
