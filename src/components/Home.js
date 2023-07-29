@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.css';
+import './Home.css';
 import { Link } from 'react-scroll';
 import Imu from '../assets/imu.png';
 import { FcIdea } from "react-icons/fc";

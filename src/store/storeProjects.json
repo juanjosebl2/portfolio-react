@@ -1,0 +1,20 @@
+[
+  
+    {
+      "project_name": "HandyMate",
+      "image_url": "https://prantoshb.github.io/Portfolio-Backend/assets/handymate.png",
+      "description": "A Full-Stack web application, where users can reserve home services like Electrician, Plumber, Gardening etc. User can also delete the reservation. The Admin can add new services and delete existing services.",
+      "source_link": "https://github.com/PrantoshB/HandyMate-Frontend",
+      "live_link": "https://deploy--fabulous-horse-dfd6cb.netlify.app/",
+      "tech_stack": ["React","Ruby on Rails","PostgreSQL","JWT","BootStrap","CSS"]
+    },
+  
+    {
+      "project_name": "Food on Rails",
+      "image_url": "https://prantoshb.github.io/Portfolio-Backend/assets/for.png",
+      "description": "Food-On-Rails is a website for managing food inventory and creating/publishing recipes. Ideal for food enthusiasts seeking organization and recipe inspiration. It has a user authentication system with special privileges.",
+      "source_link": "https://github.com/PrantoshB/Food-On-Rails",
+      "live_link": "https://food-on-rail.onrender.com/",
+      "tech_stack": ["Ruby on Rails","CSS","PostgreSQL","Devise","CanCanCan"]
+    }
+]

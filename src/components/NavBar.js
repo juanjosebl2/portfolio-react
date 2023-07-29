@@ -1,7 +1,7 @@
 import './NavBar.css';
-import { Link } from 'react-scroll';
 import { FcGraduationCap } from "react-icons/fc";
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -29,31 +29,31 @@ const NavBar = () => {
         <div className="tophead">
           <h1>
             <FcGraduationCap className="icon"/>
-            <Link className="name-logo" to="home">
+            <NavLink className="name-logo" to='/home'>
               JuanWEB
-            </Link>
+            </NavLink>
           </h1>
         </div>
         <ul className="menu">
           <li>
-            <Link to="home">
+            <NavLink to='/home'>
               HOME
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="about">
+            <NavLink to="/about">
               ABOUT
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="projects">
+            <NavLink to='/projects'>
               PROJECTS
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="contact">
+            <NavLink to="/contact">
               CONTACT
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

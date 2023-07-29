@@ -23,8 +23,11 @@ a {
 }
 
 .App {
-  background-image: url('./assets/effect.png');
-  animation: static 3s steps(5, end) infinite;
+  background-image: url('./assets/effect3.jpeg');
+  animation-name: static; 
+  animation-duration: 3s; 
+  animation-timing-function: steps(5, jump-none); 
+  animation-iteration-count: infinite; 
   z-index: 999;
   background-size: 200px;
 }
