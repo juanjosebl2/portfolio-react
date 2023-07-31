@@ -1,4 +1,6 @@
 import './App.css';
+import { About } from './components/About';
+import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
@@ -16,6 +18,8 @@ function App() {
           <Routes >
               <Route path="/" element={<Navigate to="/home"/>} /> 
               <Route path="/home" element={<Home/>} />
+              <Route path="/about" element={<About/>} />
+              <Route path="/about" element={<Contact/>} />
           </Routes>
         </section>
 
