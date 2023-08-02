@@ -1,3 +1,26 @@
+.title-site {
+  margin-top: 200px;
+  margin-bottom: -200px;
+}
+
+.title-contact {
+  font-size: 5rem;
+  color: white;
+  margin: 0;
+  font-family: 'Indie Flower', cursive;
+  overflow: hidden;
+}
+
+.contactme {
+  height: 100vh;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  margin-bottom: 10%;
+}
+
 #fcf-form {
     display:block;
     background: linear-gradient(#ff9968, #ff5e63) no-repeat;
