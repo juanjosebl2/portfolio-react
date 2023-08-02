@@ -3,23 +3,13 @@ import './About.css';
 import HTML from '../assets/html.png';
 import jQuery from '../assets/jquery.png';
 import Ruby from '../assets/ruby.png';
-import JEST from '../assets/jest.png';
 import Flutter from '../assets/flutter.png';
 import VSCode from '../assets/vscode.png';
-import Figma from '../assets/figma.png';
 import ReactIcon from '../assets/react.png'
-import RSpecLogo from '../assets/rspec.png'
 import NPMlogo from '../assets/npm.png'
 import GitLogo from '../assets/git.png'
 import GitHublogo from '../assets/github.png'
-import GMeet from '../assets/meet.png'
-import Zoomlogo from '../assets/zoom.webp'
-import SkypeLogo from '../assets/skype.png'
-import Slack from '../assets/slack.png'
-import WebPack from '../assets/webpack.png'
 import PostGres from '../assets/postgres.png'
-import Rails from '../assets/rails.png'
-import Canva from '../assets/canva.png'
 import CDT from '../assets/cdt.png'
 import CSS from '../assets/css.png'
 import BootStrap from '../assets/bootstrap.png'
@@ -27,7 +17,20 @@ import NextJS from '../assets/next.webp'
 import JavaScript from '../assets/javascript.png'
 import Sass from '../assets/sass.png'
 import PostMan from '../assets/postman.png'
+import TailwindCss from '../assets/tailwindcss.png'
+import Laravel from '../assets/laravel.png'
 import MongoBD from '../assets/mongoBD.png'
+import SpringBoot from '../assets/springboot.png'
+import MySql from '../assets/mysql.png'
+import Django from '../assets/django.png'
+import SqLite from '../assets/sqlite.png'
+import IntellIj from '../assets/intellij.png'
+import AndroidStudio from '../assets/androidstudio.png'
+import Vite from '../assets/vite.png'
+import Kotlin from '../assets/kotlin.png'
+import C from '../assets/c.png'
+import Java from '../assets/java.png'
+import Python from '../assets/python.png'
 
 export const About = () => {
     return (
@@ -35,7 +38,10 @@ export const About = () => {
             <div className="about-me">
                 <h2 className="title about-title">ABOUT ME</h2>
                 <p className="paragraph about-para">
-                    My journey in the world of programming began in 2018, when I ventured into freelancing. Since then, I have had the opportunity to work on a wide range of projects, honing my skills and expanding my knowledge along the way. I have worked with various clients, both independently and as part of a team, to deliver innovative and user-friendly websites and mobile applications.
+                    I am passionate about full stack development, covering both the backend and the frontend of applications. If I had to choose, I'd lean towards the backend, as I love the logic behind the features and the data structure.
+                    <br/>
+                    <br/>                
+                    I am constantly looking for new technologies and opportunities in the field of development, be it backend, frontend or other areas. I am excited about what the future may bring and how I can continue to expand my abilities to create innovative and functional solutions.
                 </p>
                 <button className="hire-me">
                     <a href="https://drive.google.com/file/d/1SRs68hq0a2XkNNynU-gg8oJAKICVtkxF/view?usp=drive_link" target="_blank" rel="noreferrer">
@@ -76,6 +82,13 @@ export const About = () => {
                     </div>
                     <div className="skill">
                         <img
+                            src={TailwindCss}
+                            alt=""
+                        />
+                        <p>TailwindCss</p>
+                    </div>
+                    <div className="skill">
+                        <img
                             src={jQuery}
                             alt=""
                         />
@@ -107,17 +120,38 @@ export const About = () => {
                 <div className="skills">
                     <div className="skill">
                         <img
-                            src={Ruby}
+                            src={Laravel}
                             alt=""
                         />
-                        <p>Ruby</p>
+                        <p>Laravel</p>
                     </div>
                     <div className="skill">
                         <img
-                            src={Rails}
+                            src={SpringBoot}
                             alt=""
                         />
-                        <p>Ruby on Rails</p>
+                        <p>SpringBoot</p>
+                    </div>
+                    <div className="skill">
+                        <img
+                            src={Django}
+                            alt=""
+                        />
+                        <p>Django</p>
+                    </div>
+                    <div className="skill">
+                        <img
+                            src={MongoBD}
+                            alt=""
+                        />
+                        <p>MongoBD</p>
+                    </div>
+                    <div className="skill">
+                        <img
+                            src={MySql}
+                            alt=""
+                        />
+                        <p>MySql</p>
                     </div>
                     <div className="skill">
                         <img
@@ -125,6 +159,13 @@ export const About = () => {
                             alt=""
                         />
                         <p>PostgreSQL</p>
+                    </div>
+                    <div className="skill">
+                        <img
+                            src={SqLite}
+                            alt=""
+                        />
+                        <p>SqLite</p>
                     </div>
                 </div>
                 <h2 className="skill-title">Mobile</h2>
@@ -137,14 +178,19 @@ export const About = () => {
                         <p>React Native</p>
                     </div>
                     <div className="skill">
-                        <img src={Flutter} alt="" />
+                        <img 
+                            src={Flutter} 
+                            alt="" 
+                        />
                         <p>Flutter</p>
                     </div>
                     <div className="skill">
-                        <img src={MongoBD} alt="" />
-                        <p>MongoBD</p>
+                        <img 
+                            src={Kotlin} 
+                            alt="" 
+                        />
+                        <p>Kotlin</p>
                     </div>
-
                 </div>
                 <h2 className="skill-title">Tools</h2>
                 <div className="skills">
@@ -157,14 +203,6 @@ export const About = () => {
                         <p>GitHub</p>
                     </div>
                     <div className="skill">
-                        <img src={RSpecLogo} alt="" />
-                        <p>RSpec</p>
-                    </div>
-                    <div className="skill">
-                        <img src={JEST} alt="" />
-                        <p>JEST</p>
-                    </div>
-                    <div className="skill">
                         <img src={CDT} alt="" />
                         <p>Chrome Dev Tools</p>
                     </div>
@@ -173,8 +211,12 @@ export const About = () => {
                         <p>VS Code</p>
                     </div>
                     <div className="skill">
-                        <img src={WebPack} alt="" />
-                        <p>Webpack</p>
+                        <img src={IntellIj} alt="" />
+                        <p>IntellIj</p>
+                    </div>
+                    <div className="skill">
+                        <img src={AndroidStudio} alt="" />
+                        <p>AndroidStudio</p>
                     </div>
                     <div className="skill">
                         <img src={PostMan} alt="" />
@@ -184,35 +226,40 @@ export const About = () => {
                         <img src={NPMlogo} alt="" />
                         <p>npm</p>
                     </div>
-                </div>
-                <h2 className="skill-title">Design</h2>
-                <div className="skills">
                     <div className="skill">
-                        <img src={Canva} alt="" />
-                        <p>Canva</p>
-                    </div>
-                    <div className="skill">
-                        <img src={Figma} alt="" />
-                        <p>Figma</p>
+                        <img src={Vite} alt="" />
+                        <p>Vite</p>
                     </div>
                 </div>
-                <h2 className="skill-title">Communication</h2>
+                <h2 className="skill-title">Lenguage Programming</h2>
                 <div className="skills">
                     <div className="skill">
-                        <img src={Slack} alt="" />
-                        <p>Slack</p>
+                        <img
+                            src={Ruby}
+                            alt=""
+                        />
+                        <p>Ruby</p>
                     </div>
                     <div className="skill">
-                        <img src={SkypeLogo} alt="" />
-                        <p>Skype</p>
+                        <img
+                            src={C}
+                            alt=""
+                        />
+                        <p>C++ C# C</p>
                     </div>
                     <div className="skill">
-                        <img src={GMeet} alt="" />
-                        <p>Google Meet</p>
+                        <img
+                            src={Java}
+                            alt=""
+                        />
+                        <p>Java</p>
                     </div>
                     <div className="skill">
-                        <img src={Zoomlogo} alt="" />
-                        <p>Zoom</p>
+                        <img
+                            src={Python}
+                            alt=""
+                        />
+                        <p>Python</p>
                     </div>
                 </div>
                 <h2 className="skill-title">Soft Skills</h2>
