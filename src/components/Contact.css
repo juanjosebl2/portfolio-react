@@ -9,6 +9,8 @@
   margin: 0;
   font-family: 'Indie Flower', cursive;
   overflow: hidden;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .contactme {
@@ -18,190 +20,262 @@
   flex-direction: column;
   justify-content: center;
   gap: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 
 #fcf-form {
-    display:block;
-    background: linear-gradient(#ff9968, #ff5e63) no-repeat;
-    padding: 20px;
-    border-radius: 10px;
+  display: block;
+  background: linear-gradient(#ff9968, #ff5e63) no-repeat;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10% 0 0;
+}
+
+.contact-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  box-shadow: 10px 10px 5px 0px #46291b;
+  border-radius: 20px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.fcf-body {
+  margin: 0;
+  font-family: courier, arial, helvética;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  padding: 30px;
+  padding-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  max-width: 100%;
+}
+
+.fcf-form-group {
+  margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+.fcf-form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  outline: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+  border: 1px solid #313131;
+}
+
+select.fcf-form-control[size],
+select.fcf-form-control[multiple] {
+  height: auto;
+}
+
+textarea.fcf-form-control {
+  font-family: -apple-system, Arial, sans-serif;
+  height: auto;
+}
+
+label.fcf-label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.fcf-credit {
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.fcf-credit a {
+  color: black;
+  text-decoration: underline;
+}
+
+.fcf-credit a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.fcf-btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fcf-btn {
+    transition: none;
   }
+}
+
+.fcf-btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+.fcf-btn:focus,
+.fcf-btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.fcf-btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.fcf-btn-primary:focus,
+.fcf-btn-primary.focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg,
+.fcf-btn-group-lg>.fcf-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+  display: block;
+  width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+  margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block,
+input[type="reset"].fcf-btn-block,
+input[type="button"].fcf-btn-block {
+  width: 100%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+only screen and (min-resolution: 125dpi) {
 
   .contact-overlay {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10% 0 0;
-  }
-
-  .contact-image {
-    display: flex;
+    grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 65%;
-    box-shadow: 10px 10px 5px 0px #46291b;
-    border-radius: 20px;
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
   }
 
-  .fcf-body {
-    margin: 0;
-    font-family: courier,arial,helvética;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-    padding: 30px;
-    padding-bottom: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    max-width: 100%;
+  .contactme {
+    padding: 0 5%;
+    margin-bottom: 60%;
   }
-  
-  .fcf-form-group {
-    margin-bottom: 1rem;
+
+  img {
+    margin-bottom: 100px;
   }
-  
-  .fcf-input-group {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    width: 100%;
+
+  .title-site {
+    margin-top: 600px;
   }
-  
-  .fcf-form-control {
-    display: block;
-    width: 100%;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    outline: none;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-overlay {
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+
   }
-  
-  .fcf-form-control:focus {
-    border: 1px solid #313131;
+
+  .contactme {
+    padding: 0 5%;
+    margin-bottom: 80%;
   }
-  
-  select.fcf-form-control[size], select.fcf-form-control[multiple] {
-    height: auto;
+
+  img {
+    margin-bottom: 100px;
   }
-  
-  textarea.fcf-form-control {
-    font-family: -apple-system, Arial, sans-serif;
-    height: auto;
+
+  .title-site {
+    font-size: 10px;
+    margin-top: 400px;
   }
-  
-  label.fcf-label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .contact-overlay {
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
   }
-  
-  .fcf-credit {
-    padding-top: 10px;
-    font-size: 0.9rem;
-    color: black;
+
+  .contactme {
+    padding: 0 5%;
+    margin-bottom: 60%;
+
   }
-  
-  .fcf-credit a {
-    color: black;
-    text-decoration: underline;
+
+  img {
+    margin-bottom: 100px;
   }
-  
-  .fcf-credit a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+
+  .title-site {
+    font-size: 10px;
+    margin-top: 600px;
   }
-  
-  .fcf-btn {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
-  
-  @media (prefers-reduced-motion: reduce) {
-    .fcf-btn {
-        transition: none;
-    }
-  }
-  
-  .fcf-btn:hover {
-    color: #212529;
-    text-decoration: none;
-  }
-  
-  .fcf-btn:focus, .fcf-btn.focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  }
-  
-  .fcf-btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-  
-  .fcf-btn-primary:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-  }
-  
-  .fcf-btn-primary:focus, .fcf-btn-primary.focus {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-  }
-  
-  .fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
-  }
-  
-  .fcf-btn-block {
-    display: block;
-    width: 100%;
-  }
-  
-  .fcf-btn-block+.fcf-btn-block {
-    margin-top: 0.5rem;
-  }
-  
-  input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
-    width: 100%;
-  }
+}

@@ -6,6 +6,11 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
 
   const [scroll, setScroll] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const handleMenu = () => {
+    setOpen(!open);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,36 +27,37 @@ const NavBar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
+
   return (
     <>
-      <nav className={`${scroll ? 'scrolled' : ''}`}>
+      <nav className={`navbar ${open ? 'nav-open' : ''} ${scroll ? 'scrolled' : ''}`}>
         <div className="tophead">
           <h1>
-            <FcGraduationCap className="icon"/>
+            <FcGraduationCap className="icon" />
             <NavLink className="name-logo" to='/home'>
               JuanWEB
             </NavLink>
           </h1>
+          <div className={`menu-btn ${open ? 'opened-btn' : ''}`} onClick={handleMenu} />
         </div>
-        <ul className="menu">
+        <ul className={`menu ${open ? 'open' : ''}`}>
           <li>
-            <NavLink to='/home'>
+            <NavLink to='/home' onClick={handleMenu}>
               HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about">
+            <NavLink to="/about" onClick={handleMenu}>
               ABOUT
             </NavLink>
           </li>
           <li>
-            <NavLink to='/projects'>
+            <NavLink to='/projects' onClick={handleMenu}>
               PROJECTS
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">
+            <NavLink to="/contact" onClick={handleMenu}>
               CONTACT
             </NavLink>
           </li>
