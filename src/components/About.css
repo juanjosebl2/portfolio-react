@@ -78,6 +78,10 @@
     gap: 2.5rem;
   }
 
+  .skills div {
+    margin-bottom: 20px;
+  }
+
   .skill {
     display: flex;
     flex-direction: column;
@@ -113,12 +117,13 @@
   .about {
     padding: 5%;
     flex-direction: column;
-    margin-bottom: 25%;
+    margin-bottom: 60%;
     margin-top: -100px;
   }
 
   .about-me {
     position: static;
+    margin-bottom: -100px;
   }
 
   .about-para {
@@ -127,6 +132,10 @@
 
   .skill p{
     margin-top: -70px;
+  }
+
+  .skill-title {
+    margin-top: 100px;
   }
   
 }
