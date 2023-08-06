@@ -14,7 +14,7 @@ export const Contact = () => {
                 <div id="fcf-form">
                     <h3 className="fcf-h3">Contact me</h3>
 
-                    <form id="fcf-form-id" className="fcf-form-class" method="post" action="contact-form-process.php">
+                    <form id="fcf-form-id" className="fcf-form-class" method="post" action="mailto:juanjosebl2@gmail.com">
 
                         <div className="fcf-form-group">
                             <label htmlFor="Name" className="fcf-label">Your name</label>
@@ -43,7 +43,7 @@ export const Contact = () => {
 
                         <div className="fcf-credit" id="fcf-credit">
                             Simple HTML email form provided by &nbsp;
-                            <a href="https://github.com" target="_blank" rel="noreferrer">JuanWEB</a>
+                            <a href="https://github.com/juanjosebl2" target="_blank" rel="noreferrer">JuanWEB</a>
                         </div>
 
                     </form>
