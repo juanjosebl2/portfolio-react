@@ -2,7 +2,7 @@
   padding: 0 10%;
   display: flex;
   align-items: flex-start;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 
 .about-title {
@@ -114,6 +114,7 @@
     padding: 5%;
     flex-direction: column;
     margin-bottom: 25%;
+    margin-top: -100px;
   }
 
   .about-me {
@@ -124,48 +125,8 @@
     width: 100% !important;
   }
 
-  .about-skills {
-    padding: 0;
-    border-left: 0;
-    margin-top: 20%;
+  .skill p{
+    margin-top: -70px;
   }
-
-  .skills {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-  }
-
-  .skill {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    align-items: center;
-    color: white;
-  }
-
-  .skill img {
-    width: 35px;
-  }
-
-  .skill p {
-    font-size: 0.75rem;
-  }
-
-  .skill-title {
-    color: white;
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-  }
-
-  .soft-skill {
-    color: white;
-    font-size: 1rem;
-    text-transform: lowercase;
-    border-radius: 50px;
-    margin: 0;
-    font-family: 'Orbit', sans-serif;
-  }
+  
 }

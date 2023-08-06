@@ -48,7 +48,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink to="/about" onClick={handleMenu}>
-              ABOUT
+              ABOUT ME
             </NavLink>
           </li>
           <li>

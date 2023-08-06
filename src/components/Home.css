@@ -35,7 +35,7 @@
   font-size: 5rem;
   color: white;
   margin: 0;
-  font-family: 'Indie Flower', cursive;
+  font-family: Courier, monospace;
   overflow: hidden;
 }
 
@@ -43,7 +43,7 @@
   font-size: 1.5rem;
   color: #cb450c;
   margin: -1% 10 0 0;
-  font-family: 'Orbit', sans-serif;
+  font-family: Courier, monospace;
 }
 
 .paragraph {
@@ -56,6 +56,7 @@
   margin: 2rem 0;
   text-align: justify;
   width: 85%;
+  font-family: Courier, monospace;
 }
 
 .hero-btns {

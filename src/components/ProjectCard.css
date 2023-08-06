@@ -5,6 +5,8 @@
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  background: rgb(0,15,36);
+  background: linear-gradient(90deg, rgba(0,15,36,1) 0%, rgba(9,71,121,0.30015756302521013) 39%, rgba(222,0,255,0.6811099439775911) 100%);
 }
 
 .project-card img {

@@ -1,8 +1,8 @@
 import React from 'react';
 import './Home.css';
-import { Link } from 'react-scroll';
 import ima from '../assets/imu.png';
 import { FcIdea } from "react-icons/fc";
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => (
   <div className="hero" id="home">
@@ -18,9 +18,9 @@ const Hero = () => (
             </a>
           </button>
           <button className="lets-talk">
-            <Link to="/contact">
+            <NavLink to="/contact">
               LET'S TALK
-            </Link>
+            </NavLink>
           </button>
         </div>
       </div>
