@@ -35,7 +35,7 @@ const NavBar = () => {
           <h1>
             <FcGraduationCap className="icon" />
             <NavLink className="name-logo" to='/home'>
-              JuanWEB
+              JuanBarrera
             </NavLink>
           </h1>
           <div className={`menu-btn ${open ? 'opened-btn' : ''}`} onClick={handleMenu} />
